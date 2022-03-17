@@ -1,0 +1,19 @@
+name: elepay決済プラグイン(3.0系)
+code: Elepay
+version: 1.0.0
+event: Event
+service:
+    - ElepayServiceProvider
+orm.path:
+    - /Resource/doctrine
+
+const:
+    name: QRコード決済
+    payment_methods_info_url: https://resource.elecdn.com/payment-methods/info.json
+    admin_host: https://dashboard.elepay.io
+    # admin_host: https://stg-dashboard.elepay.io
+    api_host: https://api.elepay.io
+    # api_host: https://stg-api.elepay.io
+    sdk_host: https://sdk.elepay.io
+    # sdk_host: https://stg-sdk.elepay.io
+    js_sdk: https://js.elepay.io/v1/elepay.js

@@ -1,0 +1,23 @@
+Plugin\Elepay\Entity\ElepayConfig:
+    type: entity
+    table: plg_elepay_config
+    repositoryClass: Plugin\Elepay\Repository\ElepayConfigRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: AUTO
+
+    fields:
+        public_key:
+            type: string
+            length: 255
+            nullable: true
+        secret_key:
+            type: string
+            length: 255
+            nullable: true
+    lifecycleCallbacks: {  }

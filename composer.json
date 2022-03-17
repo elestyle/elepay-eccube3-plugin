@@ -1,0 +1,11 @@
+{
+  "name": "ec-cube/elepay3",
+  "version": "1.0.0",
+  "description": "elepay決済プラグイン(3.0系)",
+  "type": "eccube3-plugin",
+  "autoload": {
+    "psr-4": {
+      "Elepay\\":"Resource/vendor/elestyle/elepay-php-sdk"
+    }
+  }
+}
