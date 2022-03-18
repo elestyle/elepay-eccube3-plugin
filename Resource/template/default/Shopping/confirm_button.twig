@@ -1,0 +1,6 @@
+<script>
+$(function () {
+    // 既存決済完了ボタンの文言変更
+    $('#order-button').text('{{ 'elepay.front.confirm.payment_btn'|trans|replace({ '%payment_method%': payment_method }) }}');
+});
+</script>

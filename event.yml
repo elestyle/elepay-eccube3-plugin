@@ -1,0 +1,8 @@
+admin.order.index.search:
+    - [onOrderSearch, NORMAL]
+Admin/Order/index.twig:
+    - [onOrderIndex, NORMAL]
+Shopping/index.twig:
+    - [onShoppingIndex, NORMAL]
+eccube.event.controller.shopping_confirm.before:
+    - [onControllerShoppingConfirmBefore, NORMAL]

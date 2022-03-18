@@ -1,0 +1,22 @@
+Plugin\Elepay\Entity\ElepayOrder:
+    type: entity
+    table: plg_elepay_order
+    repositoryClass: Plugin\Elepay\Repository\ElepayOrderRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: AUTO
+
+    fields:
+        order_id:
+            type: integer
+            nullable: false
+        elepay_charge_id:
+            type: string
+            length: 255
+            nullable: true
+    lifecycleCallbacks: {  }
